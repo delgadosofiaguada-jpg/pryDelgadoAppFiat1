@@ -48,7 +48,7 @@
             cmdAceptar.TabIndex = 0;
             cmdAceptar.Text = "Aceptar";
             cmdAceptar.UseVisualStyleBackColor = true;
-            cmdAceptar.Click += this.cmdAceptar_Click;
+            cmdAceptar.Click += cmdAceptar_Click;
             // 
             // lblTitulo
             // 
@@ -127,6 +127,7 @@
             cmdCancelar.TabIndex = 8;
             cmdCancelar.Text = "Cancelar";
             cmdCancelar.UseVisualStyleBackColor = true;
+            cmdCancelar.Click += cmdCancelar_Click;
             // 
             // frmLogin
             // 

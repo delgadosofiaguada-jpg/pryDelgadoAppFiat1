@@ -63,12 +63,23 @@ namespace pryDelgadoAppFiat11
                 }
             }
         }
+
+        private void LimpiarControles()
+        {
+            txtUsuario.Text = "";
+            txtContraseña.Text = "";
+            lstModulo.SelectedIndex = -1;
+        }
+
         private void cmdAceptar_Click(object sender, EventArgs e)
-            {
-                 Calcular();
-            }
-      
-         
-       
+        {
+            Calcular();
+            LimpiarControles();
+        }
+
+        private void cmdCancelar_Click(object sender, EventArgs e)
+        {
+            LimpiarControles();
+        }
     }
 }
