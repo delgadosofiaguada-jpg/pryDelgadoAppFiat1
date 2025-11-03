@@ -16,5 +16,10 @@ namespace pryDelgadoAppFiat11
         {
             InitializeComponent();
         }
+
+        private void frmBienvenida_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

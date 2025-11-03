@@ -81,5 +81,25 @@ namespace pryDelgadoAppFiat11
         {
             LimpiarControles();
         }
+
+        private void frmLogin_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtUsuario_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtUsuario_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Solo permite letras, espacios y teclas de control (como borrar)
+            if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar) && e.KeyChar != ' ')
+            {
+                e.Handled = true; // Bloquea la tecla si no cumple
+            }
+        }
     }
+    
 }

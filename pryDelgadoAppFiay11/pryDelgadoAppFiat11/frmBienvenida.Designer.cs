@@ -13,9 +13,9 @@
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
-            if (disposing && (components != null))
+            if (disposing && (components != null)) 
             {
-                components.Dispose();
+                components.Dispose(); //
             }
             base.Dispose(disposing);
         }
@@ -36,9 +36,9 @@
             // 
             lblBienvenido.AutoSize = true;
             lblBienvenido.Font = new Font("Segoe UI", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblBienvenido.Location = new Point(195, 87);
+            lblBienvenido.Location = new Point(171, 65);
             lblBienvenido.Name = "lblBienvenido";
-            lblBienvenido.Size = new Size(398, 81);
+            lblBienvenido.Size = new Size(321, 65);
             lblBienvenido.TabIndex = 0;
             lblBienvenido.Text = "Bienvenido a";
             // 
@@ -47,21 +47,23 @@
             lblSinterpart.AutoSize = true;
             lblSinterpart.Font = new Font("Segoe UI", 48F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblSinterpart.ForeColor = SystemColors.Highlight;
-            lblSinterpart.Location = new Point(113, 204);
+            lblSinterpart.Location = new Point(99, 153);
             lblSinterpart.Name = "lblSinterpart";
-            lblSinterpart.Size = new Size(584, 106);
+            lblSinterpart.Size = new Size(469, 86);
             lblSinterpart.TabIndex = 1;
             lblSinterpart.Text = "Sinterpart SRL";
             // 
             // frmBienvenida
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(700, 338);
             Controls.Add(lblSinterpart);
             Controls.Add(lblBienvenido);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "frmBienvenida";
             Text = "Bienvenida";
+            Load += frmBienvenida_Load;
             ResumeLayout(false);
             PerformLayout();
         }
