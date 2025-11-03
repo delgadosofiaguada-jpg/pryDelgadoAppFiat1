@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmBienvenida));
             lblBienvenido = new Label();
             lblSinterpart = new Label();
             SuspendLayout();
@@ -60,6 +61,7 @@
             ClientSize = new Size(700, 338);
             Controls.Add(lblSinterpart);
             Controls.Add(lblBienvenido);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Margin = new Padding(3, 2, 3, 2);
             Name = "frmBienvenida";
             Text = "Bienvenida";

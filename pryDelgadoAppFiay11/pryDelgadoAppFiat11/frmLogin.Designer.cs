@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLogin));
             cmdAceptar = new Button();
             lblTitulo = new Label();
             txtUsuario = new TextBox();
@@ -151,6 +152,7 @@
             Controls.Add(txtUsuario);
             Controls.Add(lblTitulo);
             Controls.Add(cmdAceptar);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Margin = new Padding(3, 2, 3, 2);
             Name = "frmLogin";
             Text = "Login";
