@@ -43,10 +43,9 @@
             // cmdAceptar
             // 
             cmdAceptar.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            cmdAceptar.Location = new Point(338, 138);
-            cmdAceptar.Margin = new Padding(3, 2, 3, 2);
+            cmdAceptar.Location = new Point(12, 290);
             cmdAceptar.Name = "cmdAceptar";
-            cmdAceptar.Size = new Size(91, 32);
+            cmdAceptar.Size = new Size(104, 43);
             cmdAceptar.TabIndex = 0;
             cmdAceptar.Text = "Aceptar";
             cmdAceptar.UseVisualStyleBackColor = true;
@@ -56,20 +55,19 @@
             // 
             lblTitulo.AutoSize = true;
             lblTitulo.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblTitulo.Location = new Point(32, 31);
+            lblTitulo.Location = new Point(12, 22);
             lblTitulo.Name = "lblTitulo";
-            lblTitulo.Size = new Size(164, 21);
+            lblTitulo.Size = new Size(206, 28);
             lblTitulo.TabIndex = 1;
             lblTitulo.Text = "Login Sinterpart SRL";
             // 
             // txtUsuario
             // 
             txtUsuario.ForeColor = SystemColors.HotTrack;
-            txtUsuario.Location = new Point(129, 80);
-            txtUsuario.Margin = new Padding(3, 2, 3, 2);
+            txtUsuario.Location = new Point(122, 78);
             txtUsuario.MaxLength = 10;
             txtUsuario.Name = "txtUsuario";
-            txtUsuario.Size = new Size(133, 23);
+            txtUsuario.Size = new Size(151, 27);
             txtUsuario.TabIndex = 2;
             txtUsuario.TextChanged += txtUsuario_TextChanged;
             txtUsuario.KeyPress += txtUsuario_KeyPress;
@@ -77,12 +75,11 @@
             // txtContraseña
             // 
             txtContraseña.ForeColor = SystemColors.WindowText;
-            txtContraseña.Location = new Point(129, 138);
-            txtContraseña.Margin = new Padding(3, 2, 3, 2);
+            txtContraseña.Location = new Point(122, 155);
             txtContraseña.MaxLength = 10;
             txtContraseña.Name = "txtContraseña";
             txtContraseña.PasswordChar = '#';
-            txtContraseña.Size = new Size(133, 23);
+            txtContraseña.Size = new Size(151, 27);
             txtContraseña.TabIndex = 3;
             // 
             // lstModulo
@@ -90,19 +87,18 @@
             lstModulo.DropDownStyle = ComboBoxStyle.DropDownList;
             lstModulo.FormattingEnabled = true;
             lstModulo.Items.AddRange(new object[] { "ADM", "SIST", "COM", "VTA" });
-            lstModulo.Location = new Point(129, 198);
-            lstModulo.Margin = new Padding(3, 2, 3, 2);
+            lstModulo.Location = new Point(122, 235);
             lstModulo.Name = "lstModulo";
-            lstModulo.Size = new Size(133, 23);
+            lstModulo.Size = new Size(151, 28);
             lstModulo.TabIndex = 4;
             // 
             // lblUsuario
             // 
             lblUsuario.AutoSize = true;
             lblUsuario.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblUsuario.Location = new Point(32, 82);
+            lblUsuario.Location = new Point(12, 80);
             lblUsuario.Name = "lblUsuario";
-            lblUsuario.Size = new Size(59, 20);
+            lblUsuario.Size = new Size(72, 25);
             lblUsuario.TabIndex = 5;
             lblUsuario.Text = "Usuario";
             // 
@@ -110,9 +106,9 @@
             // 
             lblContraseña.AutoSize = true;
             lblContraseña.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblContraseña.Location = new Point(32, 138);
+            lblContraseña.Location = new Point(12, 155);
             lblContraseña.Name = "lblContraseña";
-            lblContraseña.Size = new Size(83, 20);
+            lblContraseña.Size = new Size(101, 25);
             lblContraseña.TabIndex = 6;
             lblContraseña.Text = "Contraseña";
             // 
@@ -120,19 +116,18 @@
             // 
             lblModulo.AutoSize = true;
             lblModulo.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblModulo.Location = new Point(32, 200);
+            lblModulo.Location = new Point(12, 238);
             lblModulo.Name = "lblModulo";
-            lblModulo.Size = new Size(61, 20);
+            lblModulo.Size = new Size(75, 25);
             lblModulo.TabIndex = 7;
             lblModulo.Text = "Módulo";
             // 
             // cmdCancelar
             // 
             cmdCancelar.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            cmdCancelar.Location = new Point(338, 188);
-            cmdCancelar.Margin = new Padding(3, 2, 3, 2);
+            cmdCancelar.Location = new Point(146, 290);
             cmdCancelar.Name = "cmdCancelar";
-            cmdCancelar.Size = new Size(91, 32);
+            cmdCancelar.Size = new Size(104, 43);
             cmdCancelar.TabIndex = 8;
             cmdCancelar.Text = "Cancelar";
             cmdCancelar.UseVisualStyleBackColor = true;
@@ -140,9 +135,9 @@
             // 
             // frmLogin
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(480, 265);
+            ClientSize = new Size(374, 353);
             Controls.Add(cmdCancelar);
             Controls.Add(lblModulo);
             Controls.Add(lblContraseña);
@@ -153,8 +148,8 @@
             Controls.Add(lblTitulo);
             Controls.Add(cmdAceptar);
             Icon = (Icon)resources.GetObject("$this.Icon");
-            Margin = new Padding(3, 2, 3, 2);
             Name = "frmLogin";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Login";
             Load += frmLogin_Load;
             ResumeLayout(false);

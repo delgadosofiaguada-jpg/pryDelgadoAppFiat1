@@ -37,9 +37,9 @@
             // 
             lblBienvenido.AutoSize = true;
             lblBienvenido.Font = new Font("Segoe UI", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblBienvenido.Location = new Point(171, 65);
+            lblBienvenido.Location = new Point(142, 62);
             lblBienvenido.Name = "lblBienvenido";
-            lblBienvenido.Size = new Size(321, 65);
+            lblBienvenido.Size = new Size(398, 81);
             lblBienvenido.TabIndex = 0;
             lblBienvenido.Text = "Bienvenido a";
             // 
@@ -48,22 +48,22 @@
             lblSinterpart.AutoSize = true;
             lblSinterpart.Font = new Font("Segoe UI", 48F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblSinterpart.ForeColor = SystemColors.Highlight;
-            lblSinterpart.Location = new Point(99, 153);
+            lblSinterpart.Location = new Point(60, 179);
             lblSinterpart.Name = "lblSinterpart";
-            lblSinterpart.Size = new Size(469, 86);
+            lblSinterpart.Size = new Size(584, 106);
             lblSinterpart.TabIndex = 1;
             lblSinterpart.Text = "Sinterpart SRL";
             // 
             // frmBienvenida
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(700, 338);
+            ClientSize = new Size(685, 354);
             Controls.Add(lblSinterpart);
             Controls.Add(lblBienvenido);
             Icon = (Icon)resources.GetObject("$this.Icon");
-            Margin = new Padding(3, 2, 3, 2);
             Name = "frmBienvenida";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Bienvenida";
             Load += frmBienvenida_Load;
             ResumeLayout(false);
